@@ -38,5 +38,8 @@ This application requires a minimum python3.8
 
 2. If you want to use a network share to save your backups to simply use the following syntax ```\\\\path/to/network/share```
 
+## Netmiko
+This application uses [netmiko](https://github.com/ktbyers/netmiko) by ktbyers. For a list of supported devices [click here](https://ktbyers.github.io/netmiko/PLATFORMS.html)
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
