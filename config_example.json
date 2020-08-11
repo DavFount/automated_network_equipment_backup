@@ -1,0 +1,29 @@
+{
+    "path_to_backup": "/relative/path/to/backup/location",
+    "backup_counter_file": "backup_counter.txt",
+    "backup_counter_file_path": "/relative/path/to/backup/counter/file",
+    "backup_count": 3,
+    "devices": [
+        {
+            "hostname": "someSwitch1",
+            "ip": "10.0.0.1",
+            "type": "hp_procurve",
+            "username": "user",
+            "password": "password"
+        },
+        {
+            "hostname": "someSwitch2",
+            "ip": "10.0.0.2",
+            "type": "cisco_ios",
+            "username": "user",
+            "password": "password"
+        },
+        {
+            "hostname": "someRouter3",
+            "ip": "10.0.0.3",
+            "type": "cisco_ios",
+            "username": "user",
+            "password": "password"
+        }
+    ]
+}
