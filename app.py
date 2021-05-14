@@ -31,14 +31,14 @@ def create_config_backup(hostname, username, password, ip, device_type, backup_c
     Generates a backup of the running configuration for a given network device. Automatically overwrites existing backups.
     """
     path = Path(config['path_to_backup']) / f'{hostname}-{backup_count}.txt'
-    hp_procurve = {
+    network_device = {
         "device_type": device_type,
         "host": ip,
         "username": username,
         "password": password,
     }
     try:
-        net_connect = ConnectHandler(**hp_procurve)
+        net_connect = ConnectHandler(**network_device)
         output = net_connect.send_command("show run")
         path.write_text(output)
     except (AuthenticationException):
